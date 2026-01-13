@@ -1,0 +1,9 @@
+import cors from "cors";
+
+const corsOption: cors.CorsOptions = {
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+    allowedHeaders: ["Content-Type", "Access-Control-Allow-Origin", "Access-Control-Allow-Methods"]
+}
+
+export default cors(corsOption)
